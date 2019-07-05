@@ -1,2 +1,2 @@
-# leetcode
-Bumbling solutions to LeetCode problems
+# LeetCode
+Bumbling Solutions to LeetCode Problems
