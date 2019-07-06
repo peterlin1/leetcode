@@ -1,16 +1,13 @@
-"""
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
-"""
-
-
 class Solution:
 
     def twoSum(self, nums, target):
         """
+        Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+        Runtime: 60 ms, faster than 39.98% of Python3 online submissions for Two Sum.
+        Memory Usage: 14.9 MB, less than 12.21% of Python3 online submissions for Two Sum.
 
 
         Parameters
