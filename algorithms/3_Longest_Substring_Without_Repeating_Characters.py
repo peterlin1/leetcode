@@ -34,8 +34,8 @@ class Solution(object):
         DP solution.
 
 
-        Runtime: 888 ms, faster than 7.19% of Python3 online submissions for Longest Substring Without Repeating Characters.
-        Memory Usage: 29.4 MB, less than 5.03% of Python3 online submissions for Longest Substring Without Repeating Characters.
+        Runtime: 628 ms, faster than 12.13% of Python3 online submissions for Longest Substring Without Repeating Characters.
+        Memory Usage: 25.6 MB, less than 5.03% of Python3 online submissions for Longest Substring Without Repeating Characters.
 
 
         Parameters
@@ -78,7 +78,7 @@ class Solution(object):
                 return max_chunk
 
             s_len = len(sng)
-            if s_len <= ret:
+            if max_chunk <= ret:
                 return 0
             if s_len == max_chunk:
                 ret = s_len
