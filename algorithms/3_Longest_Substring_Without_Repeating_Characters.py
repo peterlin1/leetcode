@@ -34,8 +34,8 @@ class Solution(object):
         DP solution.
 
 
-        Runtime: 1592 ms, faster than 5.00% of Python3 online submissions for Longest Substring Without Repeating Characters.
-        Memory Usage: 25.6 MB, less than 5.03% of Python3 online submissions for Longest Substring Without Repeating Characters.
+        Runtime: 888 ms, faster than 7.19% of Python3 online submissions for Longest Substring Without Repeating Characters.
+        Memory Usage: 29.4 MB, less than 5.03% of Python3 online submissions for Longest Substring Without Repeating Characters.
 
 
         Parameters
@@ -47,6 +47,20 @@ class Solution(object):
         -------
         ret : int
 
+
+        Examples
+        --------
+        >>> Solution().lengthOfLongestSubstring('abcabcbb')
+        3
+        >>> Solution().lengthOfLongestSubstring('qrebtmppwuuhapcegnaon')
+        8
+        >>> Solution().lengthOfLongestSubstring('sarppvkakhasannaeptjdyqpgt')
+        9
+        >>> Solution().lengthOfLongestSubstring('txtuuasalcipqdcfnvybjmynsqlaepaanvujxokkruzhxeokzmnkalxsdisiauinsey')
+        12
+        >>> Solution().lengthOfLongestSubstring('bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb')
+        1
+
         """
         ret = 0
         mem = {}
@@ -55,14 +69,17 @@ class Solution(object):
             nonlocal mem
             nonlocal ret
 
-            max_chunk = len("".join(set(sng)))
-            s_len = len(sng)
-            if s_len <= ret:
-                return 0
             if sng in mem:
                 return 0
             else:
                 mem[sng] = 1
+            max_chunk = len("".join(set(sng)))
+            if max_chunk is 1 or max_chunk is 2:
+                return max_chunk
+
+            s_len = len(sng)
+            if s_len <= ret:
+                return 0
             if s_len == max_chunk:
                 ret = s_len
                 return s_len
@@ -70,14 +87,3 @@ class Solution(object):
             return max(map(iterate, [sng[i:i + max_chunk] for i in range(0, len(sng) - max_chunk + 1)]))
 
         return iterate(s)
-
-
-if __name__ == "__main__":
-    # 3
-    Solution().lengthOfLongestSubstring('abcabcbb')
-    # 8
-    Solution().lengthOfLongestSubstring('qrebtmppwuuhapcegnaon')
-    # 9
-    Solution().lengthOfLongestSubstring('sarppvkakhasannaeptjdyqpgt')
-    # 12
-    Solution().lengthOfLongestSubstring('txtuuasalcipqdcfnvybjmynsqlaepaanvujxokkruzhxeokzmnkalxsdisiauinsey')

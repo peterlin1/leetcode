@@ -21,7 +21,7 @@ class Solution:
         >>> nums = [2, 7, 11, 15]
         >>> target = 9
         >>> Solution().twoSum(nums=nums, target=9)
-            [0, 1]
+        [0, 1]
 
 
         Returns
