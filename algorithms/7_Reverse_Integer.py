@@ -5,6 +5,10 @@ class Solution(object):
         Given a 32-bit signed integer, reverse digits of an integer.
 
 
+        Runtime: 44 ms, faster than 23.10% of Python3 online submissions for Reverse Integer.
+        Memory Usage: 13.9 MB, less than 5.26% of Python3 online submissions for Reverse Integer.
+
+
         Parameters
         ----------
         x : int
