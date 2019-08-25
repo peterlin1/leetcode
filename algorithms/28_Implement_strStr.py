@@ -6,8 +6,8 @@ class Solution(object):
 
         Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
-        Runtime: 44 ms, faster than 38.07% of Python3 online submissions for Implement strStr().
-        Memory Usage: 13.9 MB, less than 12.31% of Python3 online submissions for Implement strStr().
+        Runtime: 32 ms, faster than 94.10% of Python3 online submissions for Implement strStr().
+        Memory Usage: 14 MB, less than 12.31% of Python3 online submissions for Implement strStr().
 
 
         Parameters
