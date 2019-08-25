@@ -5,8 +5,8 @@ class Solution(object):
         Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest
         sum and return its sum.
 
-        Runtime: 76 ms, faster than 76.69% of Python3 online submissions for Maximum Subarray.
-        Memory Usage: 14.8 MB, less than 5.69% of Python3 online submissions for Maximum Subarray.
+        Runtime: 72 ms, faster than 92.49% of Python3 online submissions for Maximum Subarray.
+        Memory Usage: 14.7 MB, less than 5.69% of Python3 online submissions for Maximum Subarray.
 
 
         Parameters
@@ -31,7 +31,7 @@ class Solution(object):
             try:
                 mem[idx] = max(val, val + mem[idx - 1])
             except IndexError:
-                mem[idx] = nums[idx]
+                mem[idx] = val
             # print(mem)
         return max(mem)
 
