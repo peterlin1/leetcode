@@ -30,9 +30,7 @@ class Solution(object):
 
         """
 
-        if len(s) == 0:
-            return 0
-
         s = s.strip()
         word = s.split(" ")[-1]
         return len(word)
+
