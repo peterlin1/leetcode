@@ -12,6 +12,9 @@ class Solution(object):
         Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can
         see ordered from top to bottom.
 
+        Runtime: 36 ms, faster than 84.75% of Python3 online submissions for Binary Tree Right Side View.
+        Memory Usage: 13.8 MB, less than 5.26% of Python3 online submissions for Binary Tree Right Side View.
+
 
         Parameters
         ----------
