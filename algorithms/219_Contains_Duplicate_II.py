@@ -7,7 +7,7 @@ class Solution(object):
 
         Runtime: 112 ms, faster than 48.24% of Python3 online submissions for Contains Duplicate II.
         Memory Usage: 21.4 MB, less than 43.75% of Python3 online submissions for Contains Duplicate II.
-        
+
 
         Parameters
         ----------
