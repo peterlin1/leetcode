@@ -6,8 +6,8 @@ class Solution(object):
 
         The vowels does not include the letter "y".
 
-        Runtime: 52 ms, faster than 87.56% of Python3 online submissions for Reverse Vowels of a String.
-        Memory Usage: 13.7 MB, less than 100.00% of Python3 online submissions for Reverse Vowels of a String.
+        Runtime: 48 ms, faster than 93.80% of Python3 online submissions for Reverse Vowels of a String.
+        Memory Usage: 14 MB, less than 93.33% of Python3 online submissions for Reverse Vowels of a String.
 
 
         Parameters
@@ -32,10 +32,7 @@ class Solution(object):
 
         vowels = set("aeiouAEIOU")
         rest = (val for val in s[:: -1] if val in vowels)
-        ret = list(s)
-
-        for idx in range(len(s)):
-            if s[idx] in vowels:
-                ret[idx] = next(rest)
+        ret = [next(rest) if val in vowels else val for val in s]
 
         return "".join(ret)
+
