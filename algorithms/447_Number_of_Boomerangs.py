@@ -47,6 +47,3 @@ class Solution(object):
             ret += sum(cnt * (cnt - 1) for cnt in mem.values())
         return ret
 
-
-if __name__ == "__main__":
-    print(Solution().numberOfBoomerangs([[0, 0], [1, 0], [2, 0]]))
