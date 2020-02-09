@@ -48,10 +48,3 @@ class Solution(object):
                 if grid[x_idx][y_idx] is 1:
                     ret += 4 - _fencing(x_idx - 1, y_idx) - _fencing(x_idx, y_idx - 1)
         return ret
-
-
-if __name__ == "__main__":
-    print(Solution().islandPerimeter([[0, 1, 0, 0],
-                                     [1, 1, 1, 0],
-                                     [0, 1, 0, 0],
-                                     [1, 1, 0, 0]]))
