@@ -9,6 +9,9 @@ class Solution(object):
         The given integer is guaranteed to fit within the range of a 32-bit signed integer.
         You could assume no leading zero bit in the integer’s binary representation.
 
+        Runtime: 24 ms, faster than 84.12% of Python3 online submissions for Number Complement.
+        Memory Usage: 12.6 MB, less than 100.00% of Python3 online submissions for Number Complement.
+
 
         Parameters
         ----------
