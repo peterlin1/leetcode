@@ -55,8 +55,3 @@ class Solution(object):
         if sum_num == num:
             return True
         return False
-
-
-if __name__ == "__main__":
-    print(Solution().checkPerfectNumber(6))
-
