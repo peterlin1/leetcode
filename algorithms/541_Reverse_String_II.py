@@ -30,8 +30,7 @@ class Solution(object):
             ret += block[k-1::-1] + block[k:]
 
         block_rem = len(s) % (2 * k)
-        block = s[len(s) - block_rem:]
         if block_rem == 0:
             return ret
-        else:
-            return ret + block[k-1::-1] + block[k:]
+        block = s[len(s) - block_rem:]
+        return ret + block[k-1::-1] + block[k:]
