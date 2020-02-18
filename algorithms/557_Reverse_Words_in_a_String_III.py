@@ -7,8 +7,8 @@ class Solution(object):
 
         Note: In the string, each word is separated by single space and there will not be any extra space in the string.
 
-        Runtime: 32 ms, faster than 69.61% of Python3 online submissions for Reverse Words in a String III.
-        Memory Usage: 13.3 MB, less than 96.15% of Python3 online submissions for Reverse Words in a String III.
+        Runtime: 24 ms, faster than 96.88% of Python3 online submissions for Reverse Words in a String III.
+        Memory Usage: 13.4 MB, less than 88.46% of Python3 online submissions for Reverse Words in a String III.
 
 
         Parameters
@@ -28,7 +28,8 @@ class Solution(object):
 
         """
 
-        ret = []
-        for word in s.split(' '):
-            ret.append(word[::-1])
-        return ' '.join(ret)
+        # ret = []
+        # for word in s.split(' '):
+        #     ret.append(word[::-1])
+        # return ' '.join(ret)
+        return " ".join([word[::-1] for word in s.split()])
