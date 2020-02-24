@@ -50,10 +50,3 @@ class Solution(object):
                           cnt + mem[val + 1])
 
         return ret
-
-
-if __name__ == "__main__":
-    # print(Solution().findLHS([1, 3, 2, 2, 5, 2, 3, 7]))
-    # print(Solution().findLHS([1, 1, 1, 1, 1, 1, 1, 1]))
-    print(Solution().findLHS([]))
-
