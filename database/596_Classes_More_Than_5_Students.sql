@@ -30,6 +30,9 @@ Should output:
 Note:
 The students should not be counted duplicate in each course.
 
+Runtime: 519 ms, faster than 93.31% of Oracle online submissions for Classes More Than 5 Students.
+Memory Usage: 0B, less than 100.00% of Oracle online submissions for Classes More Than 5 Students.
+
 */
 
 SELECT
@@ -39,4 +42,4 @@ FROM
 GROUP BY
     courses.class
 HAVING
-    COUNT(DISTINCT student) > 4
+    COUNT(DISTINCT courses.student) > 4
