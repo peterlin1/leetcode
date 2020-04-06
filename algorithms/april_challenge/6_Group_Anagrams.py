@@ -13,8 +13,8 @@ class Solution(object):
 
         101 / 101 test cases passed.
         Status: Accepted
-        Runtime: 152 ms
-        Memory Usage: 16.5 MB
+        Runtime: 100 ms
+        Memory Usage: 16.8 MB
 
 
         Parameters
@@ -36,7 +36,7 @@ class Solution(object):
 
         ret = defaultdict(list)
 
-        for s_idx, s_word in enumerate(strs):
-            ret["".join(sorted(s_word))].append(strs[s_idx])
+        for s_word in strs:
+            ret["".join(sorted(s_word))].append(s_word)
 
         return list(ret.values())
