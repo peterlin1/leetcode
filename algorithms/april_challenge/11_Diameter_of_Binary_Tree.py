@@ -19,6 +19,11 @@ class Solution(object):
 
         Note: The length of path between two nodes is represented by the number of edges between them.
 
+        106 / 106 test cases passed.
+        Status: Accepted
+        Runtime: 48 ms
+        Memory Usage: 15.9 MB
+
 
         Parameters
         ----------
