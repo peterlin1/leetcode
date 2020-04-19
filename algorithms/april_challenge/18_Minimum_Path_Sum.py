@@ -32,7 +32,7 @@ class Solution(object):
 
         l_r = len(grid)
         l_c = len(grid[0])
-        dp = [[0 for _x in range(len(grid[0]))] for _y in range(len(grid))]
+        dp = [[0 for _x in range(l_c)] for _y in range(l_r)]
 
         # step 0
         dp[0][0] = grid[0][0]
