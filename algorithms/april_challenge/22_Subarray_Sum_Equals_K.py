@@ -41,8 +41,8 @@ class Solution(object):
         ret = 0
         c_sum = 0
 
-        for idx in range(len(nums)):
-            c_sum += nums[idx]
+        for val in nums:
+            c_sum += val
             if c_sum == k:
                 ret += 1
 
