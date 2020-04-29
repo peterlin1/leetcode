@@ -1,5 +1,4 @@
-from collections import Counter
-from collections import deque
+from collections import Counter, deque
 
 
 class FirstUnique(object):
