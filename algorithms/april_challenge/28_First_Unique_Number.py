@@ -21,8 +21,8 @@ class FirstUnique(object):
 
     17 / 17 test cases passed.
     Status: Accepted
-    Runtime: 816 ms
-    Memory Usage: 55.2 MB
+    Runtime: 808 ms
+    Memory Usage: 55.6 MB
 
     """
 
@@ -67,7 +67,7 @@ class FirstUnique(object):
         if self._m_map[value] == 1:
             self._mem.append(value)
         else:
-            while (len(self._mem) > 0) and (self._m_map[self._mem[0]] > 1):
+            while self._mem and (self._m_map[self._mem[0]] > 1):
                 self._mem.popleft()
 
 # Your FirstUnique object will be instantiated and called as such:
