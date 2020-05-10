@@ -22,8 +22,8 @@ class Solution(object):
         trust[i][0] != trust[i][1]
         1 <= trust[i][0], trust[i][1] <= N
 
-        Runtime: 1960 ms, faster than 5.02% of Python3 online submissions for Find the Town Judge.
-        Memory Usage: 18.2 MB, less than 10.00% of Python3 online submissions for Find the Town Judge.
+        Runtime: 1092 ms, faster than 14.27% of Python3 online submissions for Find the Town Judge.
+        Memory Usage: 18.3 MB, less than 10.00% of Python3 online submissions for Find the Town Judge.
 
 
         Parameters
@@ -66,8 +66,10 @@ class Solution(object):
             except KeyError:
                 pass
 
-        if mem:
-            for k in mem:
-                if mem[k] == N - 1:
-                    return k
+            if not mem:
+                return -1
+
+        for k in mem:
+            if mem[k] == N - 1:
+                return k
         return -1
