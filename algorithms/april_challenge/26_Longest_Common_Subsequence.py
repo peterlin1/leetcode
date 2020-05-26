@@ -45,18 +45,22 @@ class Solution(object):
         >>> Solution().longestCommonSubsequence("abc", "def")
         0
 
+        >>> Solution().longestCommonSubsequence("bab", "bbb")
+        2
+
         """
 
         if len(text1) < len(text2):
             return self.longestCommonSubsequence(text2, text1)
 
         mem = [0] * (len(text2) + 1)
-        for idx in range(1, len(text1) + 1):
+        for idx in range(len(text1)):
             k = 0
-            for jdx in range(1, len(text2) + 1):
-                if text1[idx - 1] == text2[jdx - 1]:
+            for jdx in range(1, len(mem)):
+                _jdx = mem[jdx]
+                if text1[idx] == text2[jdx - 1]:
                     mem[jdx] = k + 1
                 else:
-                    k = mem[jdx]
-                    mem[jdx] = max(mem[jdx - 1], k)
+                    mem[jdx] = max(mem[jdx - 1], mem[jdx])
+                k = _jdx
         return mem[-1]
