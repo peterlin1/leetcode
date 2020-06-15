@@ -67,5 +67,4 @@ class Solution(object):
             if k > 0:
                 for _dst in mem[city]:
                     heapq.heappush(heap, (price + mem[city][_dst], _dst, k - 1))
-                    
         return -1
